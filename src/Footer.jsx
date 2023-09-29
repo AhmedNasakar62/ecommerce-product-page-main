@@ -1,13 +1,14 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <Attribution>
       Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+      <Link to="https://www.frontendmentor.io?ref=challenge" target="_blank">
         Frontend Mentor
-      </a>
-      . Coded by <a href="#">Ahmed Muhammed Abdulrazaq</a>.
+      </Link>
+      . Coded by <Link to="#">Ahmed Muhammed Abdulrazaq</Link>.
     </Attribution>
   );
 };

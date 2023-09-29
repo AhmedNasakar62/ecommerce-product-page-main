@@ -63,7 +63,7 @@ const Content = ({
           <img src={previous} alt="previous" />
         </Previous>
         <Figure onClick={() => setSelectView(!selectView)}>
-          <img src={images[currentIndex]} alt="image" />
+          <img src={images[currentIndex]} alt="" />
         </Figure>
         <Section>
           <figure>

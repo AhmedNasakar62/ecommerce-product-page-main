@@ -2,7 +2,6 @@ import Header from "./Header";
 import Content from "./Content";
 import Footer from "./Footer";
 import Page from "./components/Page";
-import { Routes, Route } from "react-router-dom";
 import { useState } from "react";
 import Product1 from "./images/image-product-1.jpg";
 import Product2 from "./images/image-product-2.jpg";
@@ -37,36 +36,29 @@ function App() {
   return (
     <div className="App">
       <Header cart={cart} setCart={setCart} select={select} />
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <Content
-              cart={cart}
-              select={select}
-              setSelect={setSelect}
-              Product1={Product1}
-              Product2={Product2}
-              Product3={Product3}
-              Product4={Product4}
-              thumbnail1={thumbnail1}
-              thumbnail2={thumbnail2}
-              thumbnail3={thumbnail3}
-              thumbnail4={thumbnail4}
-              selectView={selectView}
-              setSelectView={setSelectView}
-              images={images}
-              currentIndex={currentIndex}
-              setCurrentIndex={setCurrentIndex}
-              selectedThumbnail={selectedThumbnail}
-              setSelectedThumbnail={setSelectedThumbnail}
-              handleThumbnailClick={handleThumbnailClick}
-              handleNext={handleNext}
-              handlePrevious={handlePrevious}
-            />
-          }
-        />
-      </Routes>
+      <Content
+        cart={cart}
+        select={select}
+        setSelect={setSelect}
+        Product1={Product1}
+        Product2={Product2}
+        Product3={Product3}
+        Product4={Product4}
+        thumbnail1={thumbnail1}
+        thumbnail2={thumbnail2}
+        thumbnail3={thumbnail3}
+        thumbnail4={thumbnail4}
+        selectView={selectView}
+        setSelectView={setSelectView}
+        images={images}
+        currentIndex={currentIndex}
+        setCurrentIndex={setCurrentIndex}
+        selectedThumbnail={selectedThumbnail}
+        setSelectedThumbnail={setSelectedThumbnail}
+        handleThumbnailClick={handleThumbnailClick}
+        handleNext={handleNext}
+        handlePrevious={handlePrevious}
+      />
       <Footer />
       <Page
         selectView={selectView}
