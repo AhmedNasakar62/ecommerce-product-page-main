@@ -372,6 +372,7 @@ const Amount = styled.div`
       height: 100%;
       opacity: 0;
       transition: opacity 0.3s;
+      cursor: pointer;
       &:hover {
         opacity: 0.5;
       }
